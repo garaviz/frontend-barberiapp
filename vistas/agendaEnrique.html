@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Citas</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="/frontend-barberiapp/css/bootstrap.min.css" rel="stylesheet"> -->
+
+</head>
+<body>
+    <div class="container mt-5">
+            <header>
+                <!-- Logo como imagen -->
+                <img src="/frontend-barberiapp/img/logo 2.jpg" alt="Logo de la empresa" class="logo" height="105px" >
+            </header>
+            <!-- Contenido principal -->
+            <main>
+                <h3>BARBERIA Y TENDENCIAS NATALIA MARTINEZ</h3>
+            </main>
+        <h2 class="mb-4">Calendario Enrique</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="calendar"></div>
+            </div>
+            <div class="col-md-5">
+                <h4>Agende su cita</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Fecha:</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="mb-3">
+                        <label for="time" class="form-label">Hora:</label>
+                        <input type="time" class="form-control" id="time">
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Descripción:</label>
+                        <input type="text" class="form-control" id="description" placeholder="Descripción del evento">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agendar cita</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="/frontend-barberiapp/js/bootstrap.min.js"></script> -->
+</body>
+</html>

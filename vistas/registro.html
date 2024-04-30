@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro</title>
   <!-- Bootstrap CSS -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+  <!-- <link href="/frontend-barberiapp/css/bootstrap.min.css" rel="stylesheet"> -->
   <style>
     body {
       background-image: url('peluqueria blanca.jpg');
@@ -50,11 +51,11 @@
 <body>
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-md-6">
+      <div class="col-md-3">
         <div class="card mt-5">
           <!-- Agregar imagen centrada -->
           <div class="centered-image mt-3">
-            <img src="/img/logo 2.jpg" alt="Imagen centrada" style="max-width: 200px;">
+            <img src="/frontend-barberiapp/img/logo 2.jpg" alt="Imagen centrada" style="max-width: 300px;">
           </div>
           <div class="card-header bg-vinotinto text-white titulo-registro">
             <h3 class="text-center">Registro</h3>
@@ -77,12 +78,17 @@
                 <label for="confirmar-contrasena">Confirmar contraseña:</label>
                 <input type="password" class="form-control" id="confirmar-contrasena" placeholder="Repite tu contraseña para verificación">
               </div>
+              <div class="form-group">
+                <label for="confirmar-contrasena">Fecha de nacimiento:</label>
+                <input type="password" class="form-control" id="confirmar-contrasena" placeholder="Repite tu contraseña para verificación">
+              </div>
               <!-- Botón "No soy un robot" como radio -->
               <div class="form-group">
                 <input type="radio" id="robot-no" name="robot" value="no" class="mr-2">
                 <label for="robot-no">No soy un robot</label>
               </div>
-              <button type="submit" class="btn btn-vinotinto btn-block mt-3">Registrarse</button>
+              <a class="btn btn-vinotinto btn-block mt-3" href="http://127.0.0.1:5500/frontend-barberiapp/vistas/login.html" role="button">Registrarse</a>
+              
             </form>
           </div>
         </div>
@@ -93,6 +99,7 @@
   <!-- Bootstrap JS y jQuery (opcional) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script src="/frontend-barberiapp/js/bootstrap.min.js"></script> -->
 </body>
 </html>
