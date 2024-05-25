@@ -55,7 +55,7 @@
         <div class="card mt-5">
           <!-- Agregar imagen centrada -->
           <div class="centered-image mt-3">
-            <img src="/frontend-barberiapp/img/logo 2.jpg" alt="Imagen centrada" style="max-width: 300px;">
+            <img src="/img/logo 2.jpg" alt="Imagen centrada" style="max-width: 300px;">
           </div>
           <div class="card-header bg-vinotinto text-white titulo-registro">
             <h3 class="text-center">Registro</h3>
@@ -67,6 +67,11 @@
                 <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
               </div>
               <div class="form-group">
+                <label for="correoElectronico">Correo electronico:</label>
+                <!-- <input type="text" class="form-control" id="correoElectronico" placeholder="Ingresa tu correo electronico"> -->
+                <input type="email" class="form-control" id="correoElectronico" placeholder="Ingresa tu correo electrónico">
+              </div>
+              <div class="form-group">
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
               </div>
@@ -75,20 +80,28 @@
                 <input type="password" class="form-control" id="contrasena" placeholder="Ingresa tu contraseña">
               </div>
               <div class="form-group">
-                <label for="confirmar-contrasena">Confirmar contraseña:</label>
-                <input type="password" class="form-control" id="confirmar-contrasena" placeholder="Repite tu contraseña para verificación">
+                <label for="confirmar_contrasena">Confirmar contraseña:</label>
+                <input type="password" class="form-control" id="confirmar_contrasena" placeholder="Repite tu contraseña para verificación">
               </div>
               <div class="form-group">
-                <label for="confirmar-contrasena">Fecha de nacimiento:</label>
-                <input type="password" class="form-control" id="confirmar-contrasena" placeholder="Repite tu contraseña para verificación">
+                <label for="fecha_de_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" class="form-control" id="fechaNacimiento" placeholder="año-mes-dia">
+              </div>
+              <div class="form-group">
+                <label for="id_tipo_usuario">id tipo de usuario:</label>
+                <select id="idTipoUsuario">
+                  <option value="12">Cliente</option>
+                  <option value="7">Administrador</option>
+                  <option value="8">Colaborador</option>
+                </select> 
               </div>
               <!-- Botón "No soy un robot" como radio -->
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <input type="radio" id="robot-no" name="robot" value="no" class="mr-2">
                 <label for="robot-no">No soy un robot</label>
-              </div>
-              <a class="btn btn-vinotinto btn-block mt-3" href="http://127.0.0.1:5500/frontend-barberiapp/vistas/login.html" role="button">Registrarse</a>
-              
+              </div> -->
+              <!-- <a class="btn btn-vinotinto btn-block mt-3" href="http://127.0.0.1:5500/frontend-barberiapp/vistas/login.html" role="button">Registrarse</a> -->
+              <a class="btn btn-vinotinto btn-block mt-3" onclick="registro()" role="button">Registrarse</a>
             </form>
           </div>
         </div>
@@ -100,6 +113,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../js/registro.js"></script>
   <!-- <script src="/frontend-barberiapp/js/bootstrap.min.js"></script> -->
 </body>
 </html>

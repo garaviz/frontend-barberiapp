@@ -1,0 +1,4 @@
+crear el catalogo js dentro de la carpeta js
+conectarlo con catalogo.html mediante la etiqueta script
+en catalogo.js hacer el listado de usuarios usando axios
+hacer el listado en el selector html basado en el listado de usuarios
